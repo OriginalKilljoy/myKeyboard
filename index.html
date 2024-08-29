@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button id="letterA" onclick="pushedLetter(this)">A</button>
+            <button id="letterB" onclick="pushedLetter(this)">B</button>
+            <button id="letterC" onclick="pushedLetter(this)">C</button>
+            <button id="letterD" onclick="pushedLetter(this)">D</button>
+            <button id="letterE" onclick="pushedLetter(this)">E</button>
+            <button id="letterF" onclick="pushedLetter(this)">F</button>
+            <button id="letterG" onclick="pushedLetter(this)">G</button>
+            <button id="letterH" onclick="pushedLetter(this)">H</button>
+            <button id="letterI" onclick="pushedLetter(this)">I</button>
+            <button id="letterJ" onclick="pushedLetter(this)">J</button>
+            <button id="letterK" onclick="pushedLetter(this)">K</button>
+            <button id="letterL" onclick="pushedLetter(this)">L</button>
+            <button id="letterM" onclick="pushedLetter(this)">M</button>
+            <button id="letterN" onclick="pushedLetter(this)">N</button>
+            <button id="letterO" onclick="pushedLetter(this)">O</button>
+            <button id="letterP" onclick="pushedLetter(this)">P</button>
+            <button id="letterQ" onclick="pushedLetter(this)">Q</button>
+            <button id="letterR" onclick="pushedLetter(this)">R</button>
+            <button id="letterS" onclick="pushedLetter(this)">S</button>
+            <button id="letterT" onclick="pushedLetter(this)">T</button>
+            <button id="letterU" onclick="pushedLetter(this)">U</button>
+            <button id="letterV" onclick="pushedLetter(this)">V</button>
+            <button id="letterW" onclick="pushedLetter(this)">W</button>
+            <button id="letterX" onclick="pushedLetter(this)">X</button>
+            <button id="letterY" onclick="pushedLetter(this)">Y</button>
+            <button id="letterZ" onclick="pushedLetter(this)">Z</button>
+            <button id="letterÆ" onclick="pushedLetter(this)">Æ</button>
+            <button id="letterØ" onclick="pushedLetter(this)">Ø</button>
+            <button id="letterÅ" onclick="pushedLetter(this)">Å</button>
+            <button id="letterÅ" onclick="pushedLetter(this)">  </button>
+        </div>
+        <div id="displayField" class="writingBox"></div>
+    </div>
+
+   <script>
+    let letterPressed;
+
+    function pushedLetter(htmlElement){
+    letterPressed = htmlElement.innerHTML;
+    displayText();
+    }
+
+    function displayText(){
+    document.getElementById("displayField").innerHTML += letterPressed;
+    }
+   </script>
+
+</body>
+</html>
